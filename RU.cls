@@ -25,13 +25,13 @@
 \RequirePackage[english]{babel} %Multilingual Support
 \RequirePackage[utf8]{inputenc} %utf8 Support
 \RequirePackage[T1]{fontenc} %Better Font Encoding for pdflatex
+\RequirePackage{mathtools} %Define Math Symbols and Load amsmath
+\RequirePackage{amssymb} %Math Fonts and Symbols
 \RequirePackage{lmodern} %Change both Text and Math Font, Load before libertinus
 \RequirePackage{libertinus} %Ubuntu Times New Roman Text Font
+% \RequirePackage{fontspec} %Better Font Encoding for xelatex
+% \RequirePackage{kpfonts} %Better Font Encoding for xelatex
 \RequirePackage{microtype} %Better Font Spacing
-
-%% Math Packages
-\RequirePackage{amssymb} %Math Fonts and Symbols
-\RequirePackage{mathtools} %Define Math Symbols and Load amsmath
 \RequirePackage{mleftright}  %Fixes Some Annoying Spacing Issues
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
 
