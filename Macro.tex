@@ -20,10 +20,12 @@
 \DeclareMathOperator{\rank}{\textnormal{rank}}
 \DeclareMathOperator{\Vol}{\textnormal{Vol}}   % volume
 \DeclareMathOperator{\Surf}{\textnormal{Surf}} % surface area
+\DeclareMathOperator{\dom}{\textnormal{dom}}
+\DeclareMathOperator{\aff}{\textnormal{aff}}
 
 %%%% Transforms! -- requires mathtools package
-\newcommand*{\LapTrans}{\xleftrightarrow{\mathcal{Z}}}
-\newcommand*{\ZTrans}{\xleftrightarrow{\mathcal{L}}}
+\newcommand*{\LapTrans}{\xleftrightarrow{\mathcal{L}}}
+\newcommand*{\ZTrans}{\xleftrightarrow{\mathcal{Z}}}
 \newcommand*{\CTFS}{\xleftrightarrow{\textnormal{CTFS}}}
 \newcommand*{\CTFT}{\xleftrightarrow{\textnormal{CTFT}}}
 \newcommand*{\DTFS}{\xleftrightarrow{\textnormal{DTFS}}}
@@ -63,28 +65,28 @@
 \renewcommand*{\P}[1]{\mathbb{P}\parens*{#1}}
 \newcommand*{\condP}[2]{\mathbb{P}\parens*{#1 \mid #2}}
 
-\DeclareMathOperator{\Bern}{\mathsf{Ber}}
-\DeclareMathOperator{\Unif}{\mathsf{Unif}}
+\DeclareMathOperator{\Berv}{\mathsf{Ber}}
+\DeclareMathOperator{\Univ}{\mathsf{Unif}}
 \DeclareMathOperator{\Expv}{\mathsf{Exp}}
-\DeclareMathOperator{\Poi}{\mathsf{Poisson}}
+\DeclareMathOperator{\Poiv}{\mathsf{Poisson}}
 \DeclareMathOperator{\Gamv}{\mathsf{Gamma}}
 \DeclareMathOperator{\Dirv}{\mathsf{Dir}}
-\DeclareMathOperator{\Mult}{\mathsf{Mult}}
-\DeclareMathOperator{\Beta}{\mathsf{Beta}}
-\DeclareMathOperator{\Geomv}{\mathsf{Geo}}
-\DeclareMathOperator{\Binomv}{\mathsf{Bin}}
-\DeclareMathOperator{\NegBinomv}{\mathsf{NB}}
-\DeclareMathOperator{\Lap}{\mathsf{Lap}}
-\DeclareMathOperator{\Gaus}{\mathsf{N}}
-\DeclareMathOperator{\Weibull}{\mathsf{Weibull}}
-\DeclareMathOperator{\Erlang}{\mathsf{Erlang}}
+\DeclareMathOperator{\Mulv}{\mathsf{Mult}}
+\DeclareMathOperator{\Betv}{\mathsf{Beta}}
+\DeclareMathOperator{\Geov}{\mathsf{Geo}}
+\DeclareMathOperator{\Binv}{\mathsf{Bin}}
+\DeclareMathOperator{\Negv}{\mathsf{NB}}
+\DeclareMathOperator{\Lapv}{\mathsf{Lap}}
+\DeclareMathOperator{\Gauv}{\mathsf{N}}
+\DeclareMathOperator{\Weiv}{\mathsf{Weibull}}
+\DeclareMathOperator{\Erlv}{\mathsf{Erlang}}
 
 %%%% Special norms and linear algebra stuff
 \newcommand*{\subgnorm}[1]{\norm*{#1}_{\psi_2}}
-\newcommand*{\subexpnorm}[1]{\norm*{#1}_{\psi_1}}
+\newcommand*{\subenorm}[1]{\norm*{#1}_{\psi_1}}
 \newcommand*{\frobnorm}[1]{\norm*{#1}_{\textnormal{F}}}
 \newcommand*{\opnorm}[1]{\norm*{#1}_{\textnormal{Op}}}
-\newcommand*{\Lipnorm}[1]{\norm*{#1}_{\textnormal{Lip}}}
+\newcommand*{\lipnorm}[1]{\norm*{#1}_{\textnormal{Lip}}}
 
 %%%% Some Abbreviations
 \newcommand*{\diff}{\mathop{}\!\mathrm{d}}
