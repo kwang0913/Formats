@@ -22,15 +22,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
 %% Font Packages
-\RequirePackage[english]{babel} %Multilingual Support
+\RequirePackage[english]{babel} %Multilingual Support, Must Load the First
 \RequirePackage[utf8]{inputenc} %utf8 Support
-\RequirePackage[T1]{fontenc} %Better Font Encoding for pdflatex
-\RequirePackage{mathtools} %Define Math Symbols and Load amsmath
-\RequirePackage{amssymb} %Math Fonts and Symbols
-\RequirePackage{lmodern} %Change both Text and Math Font, Load before libertinus
-\RequirePackage{libertinus} %Ubuntu Times New Roman Text Font
+\RequirePackage[T1]{fontenc} %Better Font Encoding for pdfLatex
+\RequirePackage{mathtools, amsthm} %Define Math Symbols and Load amsmath
+% \RequirePackage{amssymb} %Math Fonts and Symbols, Conflict with newtxmath
+% \RequirePackage{lmodern} %Change both Text and Math Font, Load before libertinus
+% \RequirePackage{libertinus} %Libertine Times New Roman Text Font
+\RequirePackage{newtxtext,newtxmath} %Best Text and Math Font for pdfLatex
 % \RequirePackage{fontspec} %Better Font Encoding for xelatex
-% \RequirePackage{kpfonts} %Better Font Encoding for xelatex
+% \RequirePackage{kpfonts} %Best Font for xeLaTeX
 \RequirePackage{microtype} %Better Font Spacing
 \RequirePackage{mleftright}  %Fixes Some Annoying Spacing Issues
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
@@ -53,7 +54,7 @@
 \RequirePackage[shortlabels]{enumitem} %Better List
 % \RequirePackage{hyperref} %Beamer Has This by Default
 % \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
-\RequirePackage{amsthm, thmtools, thm-restate} %Better Theorems
+\RequirePackage{thmtools, thm-restate} %Better Theorems
 
 %% Code Packages
 \RequirePackage{listings} %Package to Insert Code. Better than Minted
