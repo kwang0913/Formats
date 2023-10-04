@@ -21,27 +21,33 @@
     ]{beamer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
-%% Font Packages
-\RequirePackage[english]{babel} %Multilingual Support
+%% Text and Math Environment Packages
+\RequirePackage[english]{babel} %Multilingual Support Must Load the First
 \RequirePackage[utf8]{inputenc} %utf8 Support
-\RequirePackage[T1]{fontenc} %Better Font Encoding for pdflatex
+\RequirePackage[T1]{fontenc} %Better Font Encoding for pdfLatex
+% \RequirePackage[shortlabels]{enumitem} %Better List
 \RequirePackage{mathtools} %Define Math Symbols and Load amsmath
-\RequirePackage{amssymb} %Math Fonts and Symbols
-\RequirePackage{lmodern} %Change both Text and Math Font, Load before libertinus
-\RequirePackage{libertinus} %Ubuntu Times New Roman Text Font
-% \RequirePackage{fontspec} %Better Font Encoding for xelatex
-% \RequirePackage{kpfonts} %Better Font Encoding for xelatex
+% \RequirePackage{hyperref} %Beamer Has This by Default
+% \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
+\RequirePackage{amsthm} %Must Load before newtxmath
+% \RequirePackage{amssymb} %Math Fonts and Symbols, Conflict with newtxmath
+% \RequirePackage{lmodern} %Text and Math Font, Load before libertinus
+% \RequirePackage{libertinus} %Libertine Times New Roman Text Font
+\RequirePackage{newtxtext,newtxmath} %Best Font for pdfLatex
+% \RequirePackage{fontspec} %Better Font Encoding for xeLatex
+% \RequirePackage{kpfonts} %Best Font for xeLaTeX
 \RequirePackage{microtype} %Better Font Spacing
-\RequirePackage{mleftright}  %Fixes Some Annoying Spacing Issues
+\RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
+\RequirePackage{thmtools, thm-restate} %Better Theorems
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
+\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
 
-%% Graphics Packages
-\RequirePackage{graphicx} %Graphics Backend with key-value Arguments
-\RequirePackage[export]{adjustbox} %More Arguments for includegraphics
+%% Display Packages
+% \RequirePackage[document]{ragged2e} %Replaced by Microtype
+\RequirePackage{csquotes} %Package to Facilities Quotations
+\RequirePackage{multicol} %Package to Use Multicols
 % \RequirePackage[svgnames]{xcolor} %Beamer Has This by Default
 \RequirePackage[most]{tcolorbox} %Customized Box
-\RequirePackage{transparent} %Transparent Images
-\RequirePackage{subcaption} %Package to Use Subfigure
 
 %% Table Packages
 \RequirePackage{tabularx} %Including Tabular with More Space Option
@@ -49,30 +55,24 @@
 \RequirePackage{colortbl} %Package to Use Color in Tables
 \RequirePackage{array} %Math and More Spacing Support in Tables
 
-%% Theorems etc (also  problems)
-\RequirePackage[shortlabels]{enumitem} %Better List
-% \RequirePackage{hyperref} %Beamer Has This by Default
-% \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
-\RequirePackage{amsthm, thmtools, thm-restate} %Better Theorems
+%% Graphics Packages
+\RequirePackage{epstopdf} %Package to Convert eps to pdf in pdfLatex
+\RequirePackage{transparent} %Transparent Images
+\RequirePackage{graphicx} %Graphics Backend with key-value Arguments
+\RequirePackage[export]{adjustbox} %More Arguments for includegraphics
+\RequirePackage{subcaption} %Package to Use Subfigure
 
 %% Code Packages
 \RequirePackage{listings} %Package to Insert Code. Better than Minted
 \RequirePackage{algorithm} %Package to Insert Algorithm
 \RequirePackage{algpseudocode} %Package to Insert Algorithm
-% \RequirePackage{keyval}
-
-%% Display Packages
-% \RequirePackage[document]{ragged2e} %Replaced by Microtype
-\RequirePackage{csquotes} %Package to Facilities Quotations
-\RequirePackage{multicol} %Package to Use Multicols
 
 %% Other Packages
 \RequirePackage{xspace} %Package to Add Space after Macros
-\RequirePackage{calc} %Package of Calculation in Latex
-\RequirePackage{rotating} %Package to Rotate Objects
+% \RequirePackage{calc} %Package of Calculation in Latex
+% \RequirePackage{rotating} %Package to Rotate Objects
 % \RequirePackage{pgf, tikz} %Package to Draw Figures.
-\RequirePackage{epstopdf} %Package to Convert eps to pdf
-\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
+% \RequirePackage{keyval}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Colors
 \definecolor{RUgray}{HTML}{6A757C} % gray = PANTONE 431
@@ -87,7 +87,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Style of the blocks
 \usecolortheme[named=RUred]{structure}
-\usefonttheme[onlymath]{serif}
+\usefonttheme{professionalfonts}
 \useinnertheme{circles}
 \useoutertheme[subsection=false]{miniframes}
 % \setbeamertemplate{navigation symbols}{}
