@@ -163,3 +163,19 @@
 %     bodyfont=\normalfont,
 %     postheadspace=1em
 %     ]{mystyle}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[
+    % sep=8pt,
+    center,
+    % shadow=true,
+    % rounded=true,
+    ]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
