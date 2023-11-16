@@ -7,7 +7,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{../Formats/RU}[2023/02/11 v0.0.1 Rutgers template beamer]
+\ProvidesClass{../../Formats/RU}[2023/02/11 v0.0.1 Rutgers template beamer]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 \ProcessOptions\relax
@@ -38,6 +38,7 @@
 % \RequirePackage{newtxtext, newtxmath} %Time New Roman for pdfLatex
 % \RequirePackage{newpxtext, newpxmath} %Palatino for pdfLatex
 \RequirePackage{kpfonts} %A complete Palatino font for Latex
+% \RequirePackage{notomath} %Noto Math Font
 \RequirePackage{microtype} %Better Font Spacing
 \RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
 \RequirePackage{thmtools, thm-restate} %Better Theorems
