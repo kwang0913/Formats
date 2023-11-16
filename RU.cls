@@ -34,11 +34,7 @@
 % \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
 \RequirePackage{amsthm} %Must Load before newtxmath
 % \RequirePackage{amssymb} %Math Fonts and Symbols, Conflict with newtxmath
-% \RequirePackage{libertinus, libertinust1math} %Libertine Font
-% \RequirePackage{newtxtext, newtxmath} %Time New Roman for pdfLatex
-% \RequirePackage{newpxtext, newpxmath} %Palatino for pdfLatex
-\RequirePackage{kpfonts} %A complete Palatino font for Latex
-% \RequirePackage{notomath} %Noto Math Font
+\RequirePackage{../../Formats/Fonts}
 \RequirePackage{microtype} %Better Font Spacing
 \RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
 \RequirePackage{thmtools, thm-restate} %Better Theorems
