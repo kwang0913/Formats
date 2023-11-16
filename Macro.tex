@@ -4,7 +4,7 @@
 \DeclarePairedDelimiter\braces{\lbrace}{\rbrace}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}
-\DeclarePairedDelimiter\angles{\langle}{\rangle}
+\DeclarePairedDelimiter\ip{\langle}{\rangle}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
@@ -122,6 +122,11 @@
 \def\aka{\emph{a.k.a}\onedot}
 \def\iff{\emph{if and only if}}
 \makeatother
+
+%%%% Boldface Math
+%Using \bm for \mathbf
+\let\oldmathbf\mathbf
+\let\mathbf\bm
 
 %%%% A box fill the rest of the page
 \newtcolorbox{stretchbox}[1][]{
