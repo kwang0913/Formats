@@ -167,17 +167,17 @@
 %     ]{mystyle}
 
 \AtBeginSection[]{
-  \begin{frame}
-  \vfill
-  \centering
-  \begin{beamercolorbox}[
-    % sep=8pt,
-    center,
-    % shadow=true,
-    % rounded=true,
+    \begin{frame}
+    \vfill
+    \centering
+    \begin{beamercolorbox}[
+        % sep=8pt,
+        center,
+        % shadow=true,
+        % rounded=true,
     ]{title}
     \usebeamerfont{title}\insertsectionhead\par%
-  \end{beamercolorbox}
-  \vfill
-  \end{frame}
+    \end{beamercolorbox}
+    \vfill
+    \end{frame}
 }
