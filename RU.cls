@@ -23,19 +23,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
 %% Text and Math Environment Packages
 \RequirePackage[english]{babel} %Multilingual Support Must Load the First
-\RequirePackage[utf8]{inputenc} %utf8 Support
+% \RequirePackage[utf8]{inputenc} %utf8 Support
+% \RequirePackage{fontspec} %Better Font Encoding for xeLatex
 \RequirePackage[T1]{fontenc} %Better Font Encoding for pdfLatex
 % \RequirePackage[shortlabels]{enumitem} %Better List
 \RequirePackage{mathtools} %Define Math Symbols and Load amsmath
+% \let\mtdblcolon\dblcolon
+% \RequirePackage{unicode-math}
 % \RequirePackage{hyperref} %Beamer Has This by Default
 % \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
 \RequirePackage{amsthm} %Must Load before newtxmath
 % \RequirePackage{amssymb} %Math Fonts and Symbols, Conflict with newtxmath
-% \RequirePackage{lmodern} %Text and Math Font, Load before libertinus
-% \RequirePackage{libertinus} %Libertine Times New Roman Text Font
-\RequirePackage{newtxtext,newtxmath} %Best Font for pdfLatex
-% \RequirePackage{fontspec} %Better Font Encoding for xeLatex
-% \RequirePackage{kpfonts} %Best Font for xeLaTeX
+% \RequirePackage{libertinus, libertinust1math} %Libertine Font
+% \RequirePackage{newtxtext, newtxmath} %Time New Roman for pdfLatex
+% \RequirePackage{newpxtext, newpxmath} %Palatino for pdfLatex
+\RequirePackage{kpfonts} %A complete Palatino font for Latex
 \RequirePackage{microtype} %Better Font Spacing
 \RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
 \RequirePackage{thmtools, thm-restate} %Better Theorems
