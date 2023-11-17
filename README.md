@@ -12,3 +12,5 @@ This is my latex template preamble. Pairing with [MyLatex](https://github.com/kw
   - 5th: A wrapper of newpxtext (Palatino text font) and eulervm (AMS Euler math font). These two fonts are designed by [Hermann Zapf](https://en.wikipedia.org/wiki/Hermann_Zapf). It is not a surprise why they work so well together. Need some extra care.
   - 6th: New tweak of Palatino. Has the same author of the 2nd font so are the same pros and cons.
   - 7th: A variant of Palatino. It has complete coverage of font type and math fonts. I don't like it but it never makes mistake.
+
+Eventually choosing font is a quite subjective thing. Use whatever you like.
