@@ -38,30 +38,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
 %% Text and Math Environment Packages
 \RequirePackage[english]{babel} %Multilingual Support Must Load the First
-% \RequirePackage[utf8]{inputenc} %utf8 Support
-% \RequirePackage{fontspec} %Better Font Encoding for xeLatex
-\RequirePackage[T1]{fontenc} %Better Font Encoding for pdfLatex
-% \RequirePackage[shortlabels]{enumitem} %Better List
-\RequirePackage{mathtools} %Define Math Symbols and Load amsmath
+% \RequirePackage[utf8]{inputenc} %utf8 Support. Preloaded in Distribution
+% \RequirePackage{fontspec} %Better Font Encoding for Open Type Font
+\RequirePackage[T1]{fontenc} %Better Font Encoding for T1 Type Font
+% \RequirePackage[shortlabels]{enumitem} %Better List. Conflict with Beamer
+% \RequirePackage[svgnames]{xcolor} %Beamer Has This by Default
+\RequirePackage[most]{tcolorbox} %Customized Box. Must Load after xcolor
+\RequirePackage{../../Formats/Fonts} %Set Fonts. Must Load after tcolorbox
+\let\openbox\undefined %Fix Some Font Issues
+\RequirePackage{mathtools} %Customize Math Symbols
+% \RiquirePackage{amsmath} %Loaded by mathtools
 % \let\mtdblcolon\dblcolon
 % \RequirePackage{unicode-math}
-% \RequirePackage{hyperref} %Beamer Has This by Default
+% \RequirePackage{hyperref} %Beamer Has This by Default. Must Load before cleveref
 % \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
-\RequirePackage{amsthm} %Must Load before newtxmath
-% \RequirePackage{amssymb} %Math Fonts and Symbols, Conflict with newtxmath
-\RequirePackage{../../Formats/Fonts}
+\RequirePackage{amsthm} %Math Theorems
+% \RequirePackage{amssymb} %Math Fonts and Symbols. Loaded by fonts package
 \RequirePackage{microtype} %Better Font Spacing
 \RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
 \RequirePackage{thmtools, thm-restate} %Better Theorems
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
-\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
-
-%% Display Packages
 % \RequirePackage[document]{ragged2e} %Replaced by Microtype
 \RequirePackage{csquotes} %Package to Facilities Quotations
 \RequirePackage{multicol} %Package to Use Multicols
-% \RequirePackage[svgnames]{xcolor} %Beamer Has This by Default
-\RequirePackage[most]{tcolorbox} %Customized Box
+\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
 
 %% Table Packages
 \RequirePackage{tabularx} %Including Tabular with More Space Option
