@@ -3,7 +3,8 @@
 This is my latex template preamble. Pairing with [MyLatex](https://github.com/kwang0913/MyLatex/tree/main/Example) can reproduce the template.
 
 - This has been fully tested on Linux and Win. Working around Linux is much easier. Working with Win requires extra care in package order. I have fixed what I encountered.
-- One problem with Win is that Miktex doesn't install all packages (it only installs needed packages). This is good to save disk space but will violate many package default value. For instance, install __cm-super__ before using this template on Win.
+- __[Outdated]__ One problem with Win is that Miktex doesn't install all packages (it only installs needed packages). This is good to save disk space but will violate many package default value. For instance, install __cm-super__ before using this template on Win.
+- __[New]__ In Miktex or Mactex, Go to setting -> Package Installation and choose 'Always'. This will install the new package on the fly. If you choose 'Ask me', some package (e.g. __cm_super__) won't trigger the installation prompt window and causes error. It has to be in 'Always' option.
 - Fonts.sty: It contains many fonts families that I feel nice. Since this is a template for pdfTex, only T1 type fonts are considered.
   - 1st: Linux Libertine families of fonts in Open Type and encoded into T1 Type. A variant of Roman and Time New Roman. It has limit but adequate math fonts. Very easy to work with.
   - 2nd: New tweak of Time New Roman. Nice coverage of math fonts. Need extra effort to work with. Still in development.
