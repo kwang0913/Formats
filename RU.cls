@@ -37,6 +37,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
 %% Text and Math Environment Packages
+% \RequirePackage{csquotes} %Package to Facilities Quotations
 \RequirePackage[english]{babel} %Multilingual Support Must Load the First
 % \RequirePackage[utf8]{inputenc} %utf8 Support. Preloaded in Distribution
 % \RequirePackage{fontspec} %Better Font Encoding for Open Type Font
@@ -59,7 +60,6 @@
 \RequirePackage{thmtools, thm-restate} %Better Theorems
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
 % \RequirePackage[document]{ragged2e} %Replaced by Microtype
-\RequirePackage{csquotes} %Package to Facilities Quotations
 \RequirePackage{multicol} %Package to Use Multicols
 \RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
 
@@ -77,7 +77,7 @@
 \RequirePackage{subcaption} %Package to Use Subfigure
 
 %% Code Packages
-\RequirePackage{listings} %Package to Insert Code. Better than Minted
+% \RequirePackage{listings} %Loaded by tcolorbox and hence no need of minted.
 \RequirePackage{algorithm} %Package to Insert Algorithm
 \RequirePackage{algpseudocode} %Package to Insert Algorithm
 
