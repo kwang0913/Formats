@@ -38,35 +38,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Packages to Load
 %% Text and Math Environment Packages
 \RequirePackage{csquotes} %Package to Facilities Quotations
+\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \RequirePackage[english]{babel} %Multilingual Support Must Load the First
 % \RequirePackage[utf8]{inputenc} %utf8 Support. Preloaded in Distribution
-% \RequirePackage{fontspec} %Better Font Encoding for Open Type Font
 \RequirePackage[T1]{fontenc} %Better Font Encoding for T1 Type Font
 % \RequirePackage[shortlabels]{enumitem} %Better List. Conflict with Beamer
 % \RequirePackage[svgnames]{xcolor} %Beamer Has This by Default
 \RequirePackage[most]{tcolorbox} %Customized Box. Must Load after xcolor
-\RequirePackage{../../Formats/Fonts} %Set Fonts. Must Load after tcolorbox
-\let\openbox\undefined %Fix Some Font Issues
-\RequirePackage{mathtools} %Customize Math Symbols
-% \RiquirePackage{amsmath} %Loaded by mathtools
-% \let\mtdblcolon\dblcolon
-% \RequirePackage{unicode-math}
-% \RequirePackage{hyperref} %Beamer Has This by Default. Must Load before cleveref
-% \RequirePackage{cleveref} %Must Load before amsthm. Conflict with Beamer
-\RequirePackage{amsthm} %Math Theorems
-% \RequirePackage{amssymb} %Math Fonts and Symbols. Loaded by fonts package
-\RequirePackage{microtype} %Better Font Spacing
-\RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
+\RequirePackage{mathtools, amsthm} %Customize Math Symbols and Theorems
 \RequirePackage{thmtools, thm-restate} %Better Theorems
+% \RiquirePackage{amsmath} %Loaded by mathtools
+% \RequirePackage{amssymb} %Conflict with Fonts package
+\RequirePackage{../../Formats/Fonts} %Set Fonts. Must Load after tcolorbox
+% \let\openbox\undefined %Fix Some Font Issues
 \RequirePackage{bm} %Boldface Math, Load after Other Math Font Packages
-% \RequirePackage[document]{ragged2e} %Replaced by Microtype
-\RequirePackage{multicol} %Package to Use Multicols
-\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\RequirePackage{mleftright} %Fixes Some Annoying Spacing Issues
+\RequirePackage{microtype} %Better Font Spacing
 
 %% Table Packages
 \RequirePackage{tabularx} %Including Tabular with More Space Option
-\RequirePackage{multirow} %Package to Use Multirow in Tables
 \RequirePackage{colortbl} %Package to Use Color in Tables
+\RequirePackage{multirow} %Package to Use Multirow in Tables
+\RequirePackage{multicol} %Package to Use Multicols
 \RequirePackage{array} %Math and More Spacing Support in Tables
 
 %% Graphics Packages
@@ -87,6 +80,8 @@
 % \RequirePackage{rotating} %Package to Rotate Objects
 % \RequirePackage{pgf, tikz} %Package to Draw Figures.
 % \RequirePackage{keyval}
+% \RequirePackage{hyperref} %Beamer Has This by Default.
+% \RequirePackage{cleveref} %Must Load at the end. Conflict with Beamer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Putting the background image in the frames
