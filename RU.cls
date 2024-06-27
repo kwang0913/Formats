@@ -45,8 +45,8 @@
 % \RequirePackage[shortlabels]{enumitem} %Better List. Conflict with Beamer
 % \RequirePackage[svgnames]{xcolor} %Beamer Has This by Default
 \RequirePackage[most]{tcolorbox} %Customized Box. Must Load after xcolor
-\RequirePackage{mathtools, amsthm} %Customize Math Symbols and Theorems
-\RequirePackage{thmtools, thm-restate} %Better Theorems
+\RequirePackage{mathtools} %Customize Math Symbols and Theorems
+\RequirePackage{amsthm, thmtools, thm-restate} %Better Theorems
 % \RiquirePackage{amsmath} %Loaded by mathtools
 % \RequirePackage{amssymb} %Conflict with Fonts package
 \RequirePackage{../../Formats/Fonts} %Set Fonts. Must Load after tcolorbox
