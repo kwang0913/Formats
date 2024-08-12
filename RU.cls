@@ -65,7 +65,7 @@
 %% Graphics Packages
 \RequirePackage{epstopdf} %Package to Convert eps to pdf in pdfLatex
 \RequirePackage{transparent} %Transparent Images
-\RequirePackage{graphicx} %Graphics Backend with key-value Arguments
+% \RequirePackage{graphicx} %Graphics Backend with key-value Arguments
 \RequirePackage[export]{adjustbox} %More Arguments for includegraphics
 \RequirePackage{subcaption} %Package to Use Subfigure
 

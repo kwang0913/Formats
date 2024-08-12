@@ -9,8 +9,8 @@
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
 %%%% math operators naming
-\DeclareMathOperator*{\argmax}{\textnormal{argmax}}
-\DeclareMathOperator*{\argmin}{\textnormal{argmin}}
+\DeclareMathOperator{\argmax}{\textnormal{argmax}}
+\DeclareMathOperator{\argmin}{\textnormal{argmin}}
 \DeclareMathOperator{\tr}{\textnormal{tr}}
 \DeclareMathOperator{\eig}{\textnormal{eig}}
 \DeclareMathOperator{\sgn}{\textnormal{sgn}}
@@ -40,9 +40,9 @@
 \newcommand*{\DTFT}{\xleftrightarrow{\textnormal{DTFT}}}
 
 %%%% vector font
-\let\oldvec\vec
-\renewcommand*{\vec}[1]{\mathbf{#1}}
-\newcommand*{\mtx}[1]{\mathbf{#1}}
+% \let\oldvec\vec
+% \renewcommand*{\vec}[1]{\mathbf{#1}}
+% \newcommand*{\mtx}[1]{\mathbf{#1}}
 \let\oldcomplement\complement
 \renewcommand*{\complement}{\!^{\mathsf{c}}}
 % \newcommand*{\trn}{\!^{\!\intercal}}
@@ -50,7 +50,7 @@
 % \newcommand*{\coj}{\!^{\dag}} % Text Mode Symbol, Should not be used
 % \newcommand*{\coj}{\!^{\dagger}}
 \newcommand*{\hmt}{\!^{\mathsf{H}}}
-\newcommand*{\coj}{\!^*}
+\newcommand*{\coj}{\!^{*}}
 \newcommand*{\inv}{\!^{-1}}
 
 %%%% number systems
@@ -69,10 +69,11 @@
 \DeclareMathOperator{\MSD}{\textnormal{MSD}}
 \DeclareMathOperator{\NSD}{\textnormal{NSD}}
 
-\newcommand*{\E}[1]{\mathbb{E}\bracks*{#1}}
-\newcommand*{\condE}[2]{\mathbb{E}\bracks*{#1 \mid #2}}
+\let\oldP\P
 \renewcommand*{\P}[1]{\mathbb{P}\parens*{#1}}
 \newcommand*{\condP}[2]{\mathbb{P}\parens*{#1 \mid #2}}
+\newcommand*{\E}[1]{\mathbb{E}\bracks*{#1}}
+\newcommand*{\condE}[2]{\mathbb{E}\bracks*{#1 \mid #2}}
 
 \DeclareMathOperator{\Berv}{\mathsf{Ber}}
 \DeclareMathOperator{\Univ}{\mathsf{Unif}}
@@ -80,11 +81,11 @@
 \DeclareMathOperator{\Poiv}{\mathsf{Poisson}}
 \DeclareMathOperator{\Gamv}{\mathsf{Gamma}}
 \DeclareMathOperator{\Dirv}{\mathsf{Dir}}
-\DeclareMathOperator{\Mulv}{\mathsf{Mult}}
+\DeclareMathOperator{\Mulv}{\mathsf{MultN}}
 \DeclareMathOperator{\Betv}{\mathsf{Beta}}
 \DeclareMathOperator{\Geov}{\mathsf{Geo}}
 \DeclareMathOperator{\Binv}{\mathsf{Bin}}
-\DeclareMathOperator{\Negv}{\mathsf{NB}}
+\DeclareMathOperator{\Negv}{\mathsf{NegB}}
 \DeclareMathOperator{\Lapv}{\mathsf{Lap}}
 \DeclareMathOperator{\Gauv}{\mathsf{N}}
 \DeclareMathOperator{\Weiv}{\mathsf{Weibull}}
@@ -110,18 +111,14 @@
 \DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
 \def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
 
-\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
-\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
-\def\cf{\emph{cf}\onedot} \def\Cf{\emph{Cf}\onedot}
-\def\etc{\emph{etc}\onedot}
-\def\vs{\emph{vs}\onedot}
-\def\wrt{w.r.t\onedot}
-\def\dof{d.o.f\onedot}
-\def\iid{i.i.d\onedot}
-\def\wolog{w.l.o.g\onedot}
+\def\eg{\emph{e.g}\onedot}  \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot}  \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{cf}\onedot}   \def\Cf{\emph{Cf}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot}      \def\dof{d.o.f\onedot}
+\def\iid{i.i.d\onedot}      \def\wolog{w.l.o.g\onedot}
 \def\etal{\emph{et al}\onedot}
-\def\whp{w.h.p\onedot}
-\def\aka{\emph{a.k.a}\onedot}
+\def\aka{\emph{a.k.a}\onedot} % Only new one
 \makeatother
 
 %%%% Trigeonometric
