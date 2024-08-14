@@ -40,9 +40,8 @@
 \newcommand*{\DTFT}{\xleftrightarrow{\textnormal{DTFT}}}
 
 %%%% vector font
-% \let\oldvec\vec
-% \renewcommand*{\vec}[1]{\mathbf{#1}}
-% \newcommand*{\mtx}[1]{\mathbf{#1}}
+\let\vec\relax
+\DeclareMathOperator{\vec}{\textnormal{vec}}
 \let\oldcomplement\complement
 \renewcommand*{\complement}{\!^{\mathsf{c}}}
 % \newcommand*{\trn}{\!^{\!\intercal}}
