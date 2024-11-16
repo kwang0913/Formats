@@ -80,6 +80,7 @@
 % \RequirePackage{rotating} %Package to Rotate Objects
 % \RequirePackage{pgf, tikz} %Package to Draw Figures.
 % \RequirePackage{keyval}
+\RequirePackage{orcidlink}
 % \RequirePackage{hyperref} %Beamer Has This by Default.
 % \RequirePackage{cleveref} %Must Load at the end. Conflict with Beamer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
